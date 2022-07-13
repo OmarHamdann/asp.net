@@ -24,7 +24,7 @@ namespace WebApplication1.Controllers
         }
 
 
-        public IActionResult Test()
+        public IActionResult Test(String name)
         {
             Product rec = new Product
             {
@@ -33,6 +33,7 @@ namespace WebApplication1.Controllers
                 OrderId=1,
 
             };
+            ViewData["name"] = name;
             ViewData["data"] = rec;
             return View();
         }
