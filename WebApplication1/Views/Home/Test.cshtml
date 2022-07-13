@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var num1 = 5;
+    var num2 = 10;
+
+    var data = (Product)ViewData["data"];
+}
+
+
+<h1>test</h1>
+
+<h3>@(num1+num2)</h3>
+
+<h4>Id: @data.Id</h4>
+<h4>P: @data.ProductName</h4>
+<h4>Id: @data.OrderId</h4>
